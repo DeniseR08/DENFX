@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxa.MainController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="7.0" prefHeight="450.0" prefWidth="828.0" text="Label1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0" />
+            <ImageView fitHeight="450.0" fitWidth="709.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/akasha-beach-hotel-and-spa-0.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="-1.0" prefHeight="83.0" prefWidth="709.0">
+               <children>
+                  <TextField alignment="CENTER" blendMode="COLOR_BURN" editable="false" layoutX="195.0" layoutY="34.0" prefHeight="47.0" prefWidth="322.0" promptText="PRIME ISLAND RESORT AND SPA" text="PRIME ISLAND RESORT AND SPA">
+                     <font>
+                        <Font name="Arial Black" size="11.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </TextField>
+                  <Button layoutX="618.0" layoutY="22.0" mnemonicParsing="false" text="BOOK NOW" />
+                  <Button layoutX="548.0" layoutY="22.0" mnemonicParsing="false" text="FAQs" textOverrun="CLIP" />
+               </children>
+            </AnchorPane>
+            <TextField editable="false" layoutX="7.0" layoutY="199.0" prefHeight="25.0" prefWidth="216.0" promptText="STAY SAFE AND START LIVING" text="STAY SAFE AND START LIVING">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TextField>
+            <Button layoutX="27.0" layoutY="406.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="LOG IN">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="ok" layoutX="104.0" layoutY="404.0" minWidth="32.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="68.0" text="SIGN UP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
